@@ -1,0 +1,51 @@
+{
+  "name": "web3-backend",
+  "version": "1.0.0",
+  "description": "web3-backend",
+  "main": "src/server.ts",
+  "dependencies": {
+    "@metamask/eth-sig-util": "^4.0.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-hbs": "^2.4.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.4.0",
+    "googleapis": "^100.0.0",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.5.1",
+    "module-alias": "^2.2.2",
+    "mongoose": "^6.3.4",
+    "nodemailer": "^6.7.5",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "'ts-node' src/server.ts",
+    "start": "nodemon --watch '**/*.ts' --exec 'ts-node' src/server.ts"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Srinivas Bhandage",
+  "license": "ISC",
+  "_moduleAliases": {
+    "@root": ".",
+    "@controller": "src/io/api/controller/",
+    "@authController": "src/io/api/controller/user/authentication/",
+    "@middleware": "src/io/api/middleware/",
+    "@helpers": "src/io/api/helpers/",
+    "@module": "src/modules/",
+    "@utils": "src/utils/"
+  },
+  "_moduleDirectories": [
+    "node_modules_custom"
+  ]
+}

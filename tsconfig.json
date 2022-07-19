@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*"],
+      "@authController/*": ["src/io/api/controller/user/authentication/*"],
+      "@controller/*": ["src/io/api/controller/*"],
+      "@middleware/*" : ["src/io/api/middleware/*"],
+      "@helpers/*": ["src/io/api/helpers/*"],
+      "@utils/*": ["src/utils/*"],
+      "@module/*": ["src/modules/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
